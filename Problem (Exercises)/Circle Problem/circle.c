@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Write a program the calculate the area and circumference of the circle.
 int main()
 {
     // Declare variables
