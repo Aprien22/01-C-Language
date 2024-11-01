@@ -1,13 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int hours_worked;
-
-    float hourly_rate = 281.00;
-    float gross_pay, withholding_tax, net_pay;
 
     char name[80];
-
+    int hours_worked;
+    float hourly_rate = 281.00;
+    float gross_pay, withholding_tax, net_pay;
+    
     printf("Hello, can you please enter your name? \n");
     scanf("%s", name);
 
