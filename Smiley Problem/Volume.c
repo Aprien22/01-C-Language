@@ -2,16 +2,23 @@
 
 void main(){
 
-    int length , width, height, volume;
+    // Declare variables
+    char name[80];
+    int first , second, third, twicesum;
 
-    printf("Please enter the length: ");
-    scanf("%d", &length);
-    printf("Please enter the width: ");
-    scanf("%d", &width);
-    printf("Please enter the height: ");
-    scanf("%d", &height);
+    // Ask for name
+    printf("Please enter your name: ");
+    scanf("%s", name);
 
-    volume = length * width * height;
+    // Ask for three numbers
+    printf("Hello %s, please enter your first number: ", name);
+    scanf("%d", &first);
+    printf("Please enter the second number: ");
+    scanf("%d", &second);
+    printf("The third number: ");
+    scanf("%d", &third);
 
-    printf("The volume of your box is, %d cm", volume);
+    twicesum = 2 * (first + second + third);
+
+    printf("Twice the sum of your numbers %d, %d, %d is %d :) :) :)", first, second, third, twicesum);
 }
