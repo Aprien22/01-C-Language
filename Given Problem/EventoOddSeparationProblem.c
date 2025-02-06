@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "C:\Users\PC\Programming\Odd-Even.c"
-#include <ctype.h>
 
 int main(){
 
