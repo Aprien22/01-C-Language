@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"cs50.h": "c",
+			"stdio.h": "c",
+			"math.h": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Programming"
+	}
+}
