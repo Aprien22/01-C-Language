@@ -1,24 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-// Write a program the calculate the area and circumference of the circle.
 int main()
 {
-    // Declare variables
+    system("cls");
     char name[80];
-    float pi = 3.14;
+    float pi = 3.14f;
     float radius, area, circumference;
 
-    // Input name
     printf("Hello, please enter your name: ");
-    scanf("%s", name);
+    fgets(name, sizeof(name), stdin); // safer for names with spaces
 
-    //Input Radius
-    printf("Hello, %s. Please enter the radius of your circle: \n", name);
-    scanf("%f", &radius);
+    printf("Hello, %sPlease enter the radius of your circle: ", name);
+    while (scanf("%f", &radius) != 1 || radius <= 0) {
+        printf("Invalid radius entered. Please Enter a Valid Number: \n");
+        while (getchar() != '\n'); // clear input buffer
+    }
 
-    // Calculate the area and circumference of the circle
     circumference = 2 * pi * radius;
     area = pi * radius * radius;
 
-    printf("Hello, %s.\nYour circle, with the radius of %f\nHas an Area of %f unit^2 and a Circumference of %f unit", name, radius, area, circumference);
+    printf("Hello, %sYour circle, with the radius of %.2f\nHas an Area of %.2f unit^2 and a Circumference of %.2f unit\n", name, radius, area, circumference);
+    return 0;
 }
