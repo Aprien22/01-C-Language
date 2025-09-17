@@ -7,7 +7,7 @@ int main() {
     printf("Hello, World!\n");
 
     char name[50];
-    int x, y;
+    int x, y, z;
     
     printf("What's your name? ");
     fgets(name, sizeof(name), stdin);
