@@ -1,7 +1,0 @@
-PN              PENCIL               30             
-ER              ERASER               20             
-PR              PAPER                50             
-WT              WATER                30             
-NB              NOTEBOOK             30             
-XR              XEROX                20             
-CH              CHAIR                20             
